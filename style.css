@@ -1,0 +1,12 @@
+.header {
+    text-align: center;
+}
+
+.accordion {
+
+    border: 2px darkblue dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 50px;
+}

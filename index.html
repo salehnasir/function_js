@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Assignment</h1>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    QNo 1 Write a function that takes in a number from an input element and displays the factorial of
+                    that number in an output element.
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <input type="number" id="myInput">
+
+                    <button onclick="calculateFactorial('myInput', 'myOutput')">Calculate Factorial</button>
+
+                    <p id="myOutput"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    QNo 2 Write a function that takes in a string from an input element and displays the same string
+                    with all the vowels removed in an output element?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <input type="text" id="Input">
+
+                    <button onclick="removeVowels('Input', 'Output')">Remove Vowels</button>
+
+                    <p id="Output"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    QNo 3 Write a function that takes in an array of numbers from an input element and displays the
+                    largest number in the array in an output element?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <input type="text" id="myIn">
+
+                    <button onclick="findMax('myIn', 'myOut')">Find Max</button>
+
+                    <p id="myOut"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    QNo 4 Write a function that takes in a string from an input element and displays the same
+                    string with the first letter of every word capitalized in an output element?
+                </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <input type="text" id="in">
+
+                    <button onclick="capitalizeWords('In', 'Out')">Capitalize Words</button>
+
+                    <p id="Out"></p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                    QNo 6 Write a function that takes in an array of numbers from an input element and displays the
+                    average of those numbers in an output element?
+                </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <label for="inputArray">Enter a comma-separated list of numbers:</label>
+                    <input type="text" id="inputArray">
+                    <button onclick="calculateAverage()">Calculate Average</button>
+                    <p id="outputAverage"></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                    QNo 6 Write a function that takes in a string from an input element and displays true if the
+                    string is a palindrome and false if it is not in an output element?
+                </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong> .</strong>
+                    <br>
+                    <label for="inputString">Enter a string:</label>
+                    <input type="text" id="inputString">
+                    <button onclick="checkPalindrome()">Check Palindrome</button>
+                    <p id="outputPalindrome"></p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    QNo 7 Write a function that takes in an array of strings from an input element and displays a new
+                    array with all the strings sorted in alphabetical order in an output element?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <label for="inputArray">Enter an array of strings:</label>
+                    <input type="text" id="inputArray">
+                    <button onclick="sortStrings()">Sort Strings</button>
+                    <p id="outputSorted"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    QNo8 Write a function that takes in a number from an input element and displays true if the number
+                    is prime and false if it is not in an output element?
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Enter a number to check if it is prime:</p>
+                    <input type="number" id="number">
+                    <button onclick="isPrime()">Check</button>
+                    <p id="output"></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Qno9 Write a function that takes in an array of objects from an input element and displays a new
+                    array with all the objects sorted by a given property in an output element?
+                </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <label for="object-array">Enter an array of objects:</label>
+                    <input type="text" id="object-array">
+                    <br><br>
+                    <label for="property">Enter a property to sort by:</label>
+                    <input type="text" id="property">
+                    <br><br>
+                    <button onclick="sortByProperty()">Sort</button>
+                    <br><br>
+                    <label for="sorted-array">Sorted Array:</label>
+                    <output id="sorted-array"></output>
+                
+                    <script src="sortObjects.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
